@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>To-do List2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+    #inputDiv {
+        height: 200px;
+        border: solid black 1px;
+        background-color: lightblue;
+    }
+
+    #title {
+        text-align: center;
+    }
+
+    #typeHere {
+        height: 50px;
+        width: 80vw;
+        margin: 20px;
+    }
+
+    #addBtn {
+        padding: 20px 40px;
+        background-color: red;
+        color: white;
+        margin: 20px;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- input box -->
+    <div id="inputDiv">
+        <h2 id="title">My To-do List</h2>
+        <input type="text" id="typeHere" placeholder="Task...">
+        <span onclick="newTask()" id="addBtn">ADD</span>
+    </div>
+    <!-- To-do list appears here -->
+    <div>
+        <ul id="todoList"></ul>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+    
+</body>
+
+</html>
